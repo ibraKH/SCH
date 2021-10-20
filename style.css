@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(201, 43, 43);
+}
+
+#timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#time {
+    color: white;
+}
+
+#dark {
+    cursor: pointer;
+    position: fixed;
+    right: 1%;
+    top: 50%;
+    transform: translate(-1%, -50%);
+    width: 10px;
+    height: 12px;
+    border: none;
+    background-color: rgb(112, 34, 143);
+    box-shadow: 0 0 2px 2px white;
+    border-radius: 50%;
+}
+
+#big {
+    font-family: Apple Chancery, cursive;
+    color: white;
+    top: 30%;
+    position: absolute;
+    left: 60px;
+}
+
+#change {
+    color: white;
+    position: absolute;
+    right: -10px;
+    top: 40%;
+    transform: rotate(90deg);
+}
+
+#small {
+    background: linear-gradient(45deg, rgb(255, 0, 255), rgb(97, 95, 211));
+    font-size: smaller;
+    color: white;
+    top: 35%;
+    position: absolute;
+    left: 100px;
+}
+
+#navt {
+    font-family: Times, Times New Roman, serif;
+    top: 50%;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    color: black;
+    transform: rotate(-90deg);
+}
+
+@media only screen and (min-width: 700px) {
+    #dark {
+        display: none;
+    }
+    .parent {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url(/aa.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #nav {
+        position: fixed;
+        width: 50px;
+        left: 0;
+        height: 100%;
+        background-color: white;
+    }
+    #facebook {
+        bottom: 20px;
+        position: absolute;
+        left: 32%;
+        width: 20px;
+    }
+    #github {
+        bottom: 60px;
+        position: absolute;
+        left: 28%;
+        width: 50px;
+    }
+    #instagram {
+        bottom: 99px;
+        position: absolute;
+        left: 28%;
+        width: 50px;
+    }
+    #twitter {
+        bottom: 140px;
+        position: absolute;
+        left: 28%;
+        width: 50px;
+    }
+    i {
+        z-index: 1;
+        top: 10px;
+        position: fixed;
+        left: 15px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .parent {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: url(/secend.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #nav {
+        position: fixed;
+        width: 25px;
+        left: 0;
+        height: 100%;
+        background-color: white;
+        transition: 0.1s ease-in;
+    }
+    #facebook {
+        bottom: 10px;
+        position: absolute;
+        left: 5px;
+        width: 20px;
+    }
+    #github {
+        bottom: 50px;
+        position: absolute;
+        left: 3px;
+        width: 50px;
+    }
+    #instagram {
+        bottom: 90px;
+        position: absolute;
+        left: 3px;
+        width: 50px;
+    }
+    #twitter {
+        bottom: 130px;
+        position: absolute;
+        left: 3px;
+        width: 50px;
+    }
+    i {
+        z-index: 1;
+        top: 10px;
+        position: fixed;
+        left: 4px;
+    }
+}
