@@ -5,11 +5,11 @@ let start = 0;
 
 function wallChange() {
     if (start === 0) {
-        document.getElementById("parent").style.backgroundImage = "url(https://github.com/ibraKH/SCH/blob/main/main.jpg)";
+        document.getElementById("parent").style.backgroundImage = "url(main.jpg)";
         document.getElementById("small").style.background = "linear-gradient(45deg, rgb(223, 181, 126), rgb(172, 131, 131))";
         start++
     } else {
-        document.getElementById("parent").style.backgroundImage = "url(https://github.com/ibraKH/SCH/blob/main/secend.jpg)";
+        document.getElementById("parent").style.backgroundImage = "url(secend.jpg)";
         document.getElementById("small").style.background = "linear-gradient(45deg, rgb(255, 0, 255), rgb(97, 95, 211))";
         start--
     }
