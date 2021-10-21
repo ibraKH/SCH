@@ -1,10 +1,18 @@
 const nav = document.getElementById("nav");
 const dark = document.getElementById("dark");
-let start = 0;
+const navS = document.getElementById("navS");
 
+let start = 0;
+let navSwitch = 0;
+
+
+let date = new Date();
+var time = date.toLocaleTimeString('en-US')
+console.log(time);
+
+document.getElementById("time").innerHTML = `${time[0]}:${time[2]}${time[3]} ${time[8]}${time[9]}`
 
 function wallChange() {
-    console.log(dark);
     if (start === 0) {
         dark.classList.remove("changeA");
         dark.classList.add("changeD");
@@ -20,8 +28,16 @@ function wallChange() {
     }
 }
 
-let date = new Date();
-var time = date.toLocaleTimeString('en-US')
-console.log(time);
-
-document.getElementById("time").innerHTML = `${time[0]}:${time[2]}${time[3]} ${time[8]}${time[9]}`
+function navClose() {
+    if (navSwitch === 0) {
+        nav.classList.remove("navShow");
+        nav.classList.add("navhide");
+        navS.style.color = "white";
+        navSwitch++
+    } else {
+        nav.classList.remove("navhide");
+        nav.classList.add("navShow");
+        navS.style.color = "black";
+        navSwitch--
+    }
+}

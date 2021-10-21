@@ -89,10 +89,18 @@ body {
     }
     #nav {
         position: fixed;
-        width: 50px;
         left: 0;
+        width: 50px;
         height: 100%;
         background-color: white;
+    }
+    .navShow {
+        opacity: 1;
+        transition: all 0.5s ease-in;
+    }
+    .navhide {
+        opacity: 0;
+        transition: all 0.5s ease-out;
     }
     #facebook {
         bottom: 20px;
@@ -148,11 +156,18 @@ body {
     }
     #nav {
         position: fixed;
-        width: 25px;
         left: 0;
+        width: 25px;
         height: 100%;
         background-color: white;
-        transition: 0.1s ease-in;
+    }
+    .navShow {
+        opacity: 1;
+        transition: all 0.5s ease-in;
+    }
+    .navhide {
+        opacity: 0;
+        transition: all 0.5s ease-out;
     }
     #facebook {
         bottom: 10px;
