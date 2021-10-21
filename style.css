@@ -4,6 +4,28 @@ body {
     color: rgb(201, 43, 43);
 }
 
+.changeD {
+    top: 12.5px;
+    background-color: rgb(223, 181, 126);
+    transition: 1s ease;
+}
+
+#dark {
+    left: 2.5px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: none;
+    box-shadow: 0 0 2px 2px white;
+    border-radius: 50%;
+}
+
+.changeA {
+    top: -1px;
+    background-color: rgb(112, 34, 143);
+    transition: ease 1s;
+}
+
 #timer {
     position: absolute;
     top: 50%;
@@ -14,20 +36,6 @@ body {
 
 #time {
     color: white;
-}
-
-#dark {
-    cursor: pointer;
-    position: fixed;
-    right: 1%;
-    top: 50%;
-    transform: translate(-1%, -50%);
-    width: 10px;
-    height: 12px;
-    border: none;
-    background-color: rgb(112, 34, 143);
-    box-shadow: 0 0 2px 2px white;
-    border-radius: 50%;
 }
 
 #big {
@@ -67,6 +75,9 @@ body {
 
 @media only screen and (min-width: 700px) {
     #dark {
+        display: none;
+    }
+    #slide {
         display: none;
     }
     .parent {
@@ -117,6 +128,17 @@ body {
 }
 
 @media only screen and (max-width: 460px) {
+    #slide {
+        justify-content: center;
+        border-radius: 5px;
+        right: 1%;
+        top: 50%;
+        transform: translate(-1%, -50%);
+        position: fixed;
+        background-color: white;
+        width: 20px;
+        height: 35px;
+    }
     .parent {
         position: absolute;
         height: 100%;
