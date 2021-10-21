@@ -5,23 +5,22 @@ body {
 }
 
 .changeD {
-    top: 12.5px;
+    top: 17px;
     background-color: rgb(223, 181, 126);
     transition: 1s ease;
 }
 
 #dark {
+    position: absolute;
     left: 2.5px;
-    position: relative;
     width: 15px;
     height: 15px;
     border: none;
-    box-shadow: 0 0 2px 2px white;
     border-radius: 50%;
 }
 
 .changeA {
-    top: -1px;
+    top: 2px;
     background-color: rgb(112, 34, 143);
     transition: ease 1s;
 }
@@ -129,12 +128,12 @@ body {
 
 @media only screen and (max-width: 460px) {
     #slide {
-        justify-content: center;
+        overflow: hidden;
         border-radius: 5px;
-        right: 1%;
+        left: 99%;
         top: 50%;
-        transform: translate(-1%, -50%);
-        position: fixed;
+        transform: translate(-99%, -50%);
+        position: relative;
         background-color: white;
         width: 20px;
         height: 35px;
