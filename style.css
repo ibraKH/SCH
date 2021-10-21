@@ -5,16 +5,16 @@ body {
 }
 
 .changeD {
-    top: 17px;
+    top: 16px;
     background-color: rgb(223, 181, 126);
     transition: 1s ease;
 }
 
 #dark {
     position: absolute;
-    left: 2.5px;
-    width: 15px;
-    height: 15px;
+    left: 1.5px;
+    width: 9px;
+    height: 10px;
     border: none;
     border-radius: 50%;
 }
@@ -135,8 +135,8 @@ body {
         transform: translate(-99%, -50%);
         position: relative;
         background-color: white;
-        width: 20px;
-        height: 35px;
+        width: 15px;
+        height: 28px;
     }
     .parent {
         position: absolute;
